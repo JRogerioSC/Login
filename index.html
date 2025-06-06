@@ -52,6 +52,11 @@
             background-color: rgb(4, 4, 44);
             color: aliceblue;
             cursor: pointer;
+            width: 71%;
+            height: 30px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
         }
 
         .button:hover {
@@ -61,13 +66,12 @@
 
         @media(max-width:750px) {
             body {
-            width: 270px;
-            height: 270px;
-            align-items: center;
-            background-image: url('/img/login.jpg');
+                width: 270px;
+                height: 270px;
+                align-items: center;
+                background-image: url('/img/login.jpg');
+            }
         }
-        }
-
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,7 +93,7 @@
             <h3>Login</h3>
             <input type='text' placeholder='Login' id='login' />
             <input type='password' placeholder='Senha' id='senha' />
-            <input class="button" type='submit' onclick='Logar(); return false' />
+            <button type='submit'onclick='Logar(); return false' class='button'>ENTRAR</button>
 
         </div>
 
@@ -103,7 +107,7 @@
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
 
-            if (login == 'Papo_reto' && senha == '689033rogerio') {
+            if (login == 'Papo_Reto' && senha == '689033rogerio') {
                 alert('Sucesso !');
                 location.href = 'https://matriproject.netlify.app/';
             } else {
