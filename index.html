@@ -45,7 +45,7 @@
             background-image: url('/img/fundo.jpg');
             border-radius: 10px;
             width: 350px;
-            height: 210px;
+            height: 170px;
         }
 
         .button {
@@ -91,7 +91,6 @@
         <div>
 
             <h3>Login</h3>
-            <input type='text' placeholder='Login' id='login' />
             <input type='password' placeholder='Senha' id='senha' />
             <button type='submit'onclick='Logar(); return false' class='button'>ENTRAR</button>
 
@@ -104,10 +103,9 @@
 
         function Logar() {
 
-            var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
 
-            if (login == 'Papo_Reto' && senha == '689033rogerio') {
+            if (senha == '689033rogerio') {
                 alert('Sucesso !');
                 location.href = 'https://matriproject.netlify.app/';
             } else {
